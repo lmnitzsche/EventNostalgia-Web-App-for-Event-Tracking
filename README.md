@@ -1,5 +1,7 @@
 # Event Nostalgia
 
+Visit [https://eventnostalgia.com]!
+
 Event Nostalgia is a web application designed to help users relive and share their favorite past events and concerts. Users can easily insert and rate the events they've attended, allowing them to create a personalized archive of memorable experiences. The application features sorting options to organize events by rating or date, making it convenient to reminisce about the past.
 
 ## Features
@@ -17,6 +19,10 @@ Event Nostalgia is a web application designed to help users relive and share the
 - **Database Storage:** All events and concert details are stored in a database, ensuring that user data is securely saved and easily retrievable each time they log in.
 
 ## How to Run
+
+Visit [https://eventnostalgia.com]!
+
+or
 
 1. **Prerequisites:** Ensure you have a web server environment like MAMP (for macOS and Windows) or LAMP (for Linux) installed on your system.
   
