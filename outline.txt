@@ -25,8 +25,6 @@ project/
 |   |-- snake.html
 |   |-- snake.css
 |   |-- snake.js
-|-- music/
-|   |-- ui_sound_forward.mp3
 |-- images/
 |   |-- nost.jpg
 |-- index.php
