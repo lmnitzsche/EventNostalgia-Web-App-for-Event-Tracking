@@ -5,54 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Event Nostalgia</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #ff7fec;
             color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        h2 {
-            margin-top: 20px;
-            color: #333;
-        }
-        p {
             line-height: 1.6;
         }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: linear-gradient(145deg, #212121, #333333);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        /* Close Button */
         .close-btn {
             position: absolute;
-            top: 15px;
-            left: 15px;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 32px;
             cursor: pointer;
-            color: #666;
-            font-size: 24px;
             transition: color 0.3s ease;
         }
         .close-btn:hover {
-            color: red;
+            color: #ff7fec; /* Red color on hover */
         }
-        .close-btn:hover {
-            cursor: pointer;
-        }
-        .copyright {
-            margin-top: 20px;
+
+        /* Headings */
+        h1 {
             text-align: center;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #f4f4f4;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h1, h2 {
+            transition: color 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            color: #ff7fec;
+        }
+
+        a:hover {
+            color: #00eaff;
+        }
+
+        /* Paragraphs */
+        a, p {
+            font-size: 16px;
+            color: #f4f4f4;
+            margin-bottom: 15px;
+           
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        a {
+            font-weight: bolder;
+            color: #ff7fec;
+        }
+
+        /* Copyright */
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
             font-size: 14px;
-            color: #666;
+            color: #ccc;
+        }
+
+        /* Add some spacing and enhance readability */
+        .container p {
+            text-align: justify;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -74,13 +112,11 @@
         <h2>Policy Updates</h2>
         <p>We reserve the right to update or change our Privacy Policy at any time. Any updates will be posted on this page.</p>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about our Privacy Policy or concerns about how we handle your personal information, please contact us at support@nostalgictechnologies.com.</p>
-
         <div class="copyright">
-            <p>&copy; 2024 Nostalgic Technologies. All Rights Reserved.</p>
+            <p>&copy; 2025 <a href="https://logannitzsche.com">Logan Nitzsche</a>. All Rights Reserved.</p>
         </div>
     </div>
+
     <script>
         function goToIndex() {
             window.location.href = "main.html";
