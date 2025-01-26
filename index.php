@@ -16,6 +16,8 @@ if(isset($_SESSION["user_id"])) {
 <head>
     <title>Home</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="images/lmn.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/lmn.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="main/styles.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4880288893316569"
