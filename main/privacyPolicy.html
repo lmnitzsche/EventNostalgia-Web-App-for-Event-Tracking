@@ -10,15 +10,15 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ff7fec;
-            color: #333;
+            background-color: #1a1a1d;
+            color: #f0f0f0;
             line-height: 1.6;
         }
         .container {
             max-width: 900px;
             margin: 40px auto;
             padding: 30px;
-            background: linear-gradient(145deg, #212121, #333333);
+            background: linear-gradient(145deg, #2c2c2c, #212121);
             border-radius: 12px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             position: relative;
@@ -44,39 +44,67 @@
             font-size: 36px;
             color: #fff;
             margin-bottom: 25px;
+            text-transform: uppercase;
         }
+
         h2 {
             font-size: 28px;
             color: #f4f4f4;
             margin-top: 20px;
             margin-bottom: 10px;
-        }
-
-        h1, h2 {
+            position: relative;
+            cursor: pointer;
             transition: color 0.3s ease;
         }
-
-        h1:hover, h2:hover {
+        h2:hover {
             color: #ff7fec;
+        }
+
+        h2:hover::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(255, 126, 236, 0.3);
+            border-radius: 5px;
+            animation: glowing 1.5s infinite alternate;
+        }
+
+        @keyframes glowing {
+            0% { box-shadow: 0 0 10px #ff7fec; }
+            100% { box-shadow: 0 0 20px #ff7fec, 0 0 30px #ff7fec; }
+        }
+
+        /* Links */
+        a {
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #00eaff;
+            color: #ff7fec;
         }
 
-        /* Paragraphs */
-        a, p {
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .dropdown p {
             font-size: 16px;
             color: #f4f4f4;
-            margin-bottom: 15px;
-           
-            transition: color 0.3s ease;
-            text-decoration: none;
+            margin-bottom: 10px;
         }
 
-        a {
-            font-weight: bolder;
-            color: #ff7fec;
+        .dropdown-toggle:hover + .dropdown {
+            display: block;
         }
 
         /* Copyright */
@@ -87,10 +115,24 @@
             color: #ccc;
         }
 
-        /* Add some spacing and enhance readability */
         .container p {
             text-align: justify;
             margin-bottom: 20px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
         }
     </style>
 </head>
@@ -100,17 +142,25 @@
         <h1>Privacy Policy</h1>
         <p>At Event Nostalgia, we are committed to respecting your privacy and protecting your personal information. This Privacy Policy outlines how we handle the information we collect when you visit our website or use our services.</p>
 
-        <h2>Information Collection</h2>
-        <p>When you create an account with Event Nostalgia, we collect your name, password, and email address. We securely store this information to provide you with access to our services and to enhance your user experience.</p>
+        <h2 class="dropdown-toggle">Information Collection</h2>
+        <div class="dropdown">
+            <p>When you create an account with Event Nostalgia, we collect your name, password, and email address. We securely store this information to provide you with access to our services and to enhance your user experience.</p>
+        </div>
 
-        <h2>Data Security</h2>
-        <p>We take the security of your personal information seriously. All passwords are encrypted and hashed to protect them from unauthorized access by hackers or other malicious parties.</p>
+        <h2 class="dropdown-toggle">Data Security</h2>
+        <div class="dropdown">
+            <p>We take the security of your personal information seriously. All passwords are encrypted and hashed to protect them from unauthorized access by hackers or other malicious parties.</p>
+        </div>
 
-        <h2>Event History</h2>
-        <p>As you use Event Nostalgia, we store information about the past events and concerts you have attended. This data allows us to personalize your experience and recommend future events that may be of interest to you.</p>
+        <h2 class="dropdown-toggle">Event History</h2>
+        <div class="dropdown">
+            <p>As you use Event Nostalgia, we store information about the past events and concerts you have attended. This data allows us to personalize your experience and recommend future events that may be of interest to you.</p>
+        </div>
 
-        <h2>Policy Updates</h2>
-        <p>We reserve the right to update or change our Privacy Policy at any time. Any updates will be posted on this page.</p>
+        <h2 class="dropdown-toggle">Policy Updates</h2>
+        <div class="dropdown">
+            <p>We reserve the right to update or change our Privacy Policy at any time. Any updates will be posted on this page.</p>
+        </div>
 
         <div class="copyright">
             <p>&copy; 2025 <a href="https://logannitzsche.com">Logan Nitzsche</a>. All Rights Reserved.</p>
