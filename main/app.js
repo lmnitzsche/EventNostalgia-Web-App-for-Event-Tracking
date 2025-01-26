@@ -3,7 +3,6 @@ const eventList = document.getElementById('eventList');
 const concertList = document.getElementById('concertList');
 const sortSelect = document.getElementById('sortSelect');
 const sortSelectTwo = document.getElementById('sortSelectTwo');
-const soundOne = document.getElementById('soundOne');
 const events = [];
 const concerts = [];
 
@@ -79,7 +78,6 @@ function deleteConcert(index) {
 }
 
 eventForm.addEventListener('submit', function(e) {
-    soundOne.play();
     e.preventDefault();
 
     const eventName = document.getElementById('eventName').value;
