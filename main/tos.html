@@ -72,6 +72,8 @@
             justify-content: space-between;
             align-items: center;
             transition: color 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .collapsible:hover {
@@ -91,13 +93,13 @@
         }
 
         .collapsible::after {
-            content: '↓';
+            content: '←';
             font-size: 20px;
             transition: transform 0.3s ease;
         }
 
         .collapsible.open::after {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
         }
 
         /* Content */
