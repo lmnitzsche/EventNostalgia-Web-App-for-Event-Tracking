@@ -1,5 +1,5 @@
 body {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Open Sans';
     animation: fadeInAnimation ease 7s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -83,7 +83,7 @@ a {
 }
 a:hover {
     color: #7100ad;
-    cursor: crosshair;
+    cursor: pointer;
     font-weight: bolder;
     text-shadow:
       -1px -1px 0 #00FFFF,
@@ -96,7 +96,7 @@ button[type="submit"] {
     color: #7100ad;
     padding: 10px 20px;
     border: none;
-    cursor:crosshair;
+    cursor:pointer;
     font-weight: bold;
     border-radius: 4px;
 }
@@ -108,7 +108,7 @@ button[type="submit"]:hover {
 select {
     background-color: #7100ad;
     color: #00FFFF;
-    cursor:crosshair;
+    cursor:pointer;
 }
 select:hover {
     background-color: #00FFFF;

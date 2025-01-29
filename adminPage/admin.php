@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
+$host = "event-db";
 $dbname = "project";
 $username = "root";
-$password = "root";
+$password = "bv$nfmZh5PXEn8@8";
 $mysqli = new mysqli($host, $username, $password, $dbname);
 
 if($mysqli->connect_errno) {
@@ -66,7 +66,6 @@ if(isset($_POST['delete_user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../main/styles.css">
     <style>
         .container {
