@@ -36,6 +36,11 @@ or
   
 6. **Enjoy:** Start reliving your favorite events by inserting and rating them, and don't forget to check out the Easter Egg!
 
+## Docker Installation
+$ sudo hdiutil attach Docker.dmg
+$ sudo /Volumes/Docker/Docker.app/Contents/MacOS/install
+$ sudo hdiutil detach /Volumes/Docker
+
 ## License
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
