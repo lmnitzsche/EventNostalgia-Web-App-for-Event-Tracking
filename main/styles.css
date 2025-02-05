@@ -33,6 +33,16 @@ footer {
         opacity: 1;
      }
 }
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.box {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
 .glow {
     color: #7100ad;
     text-shadow:

@@ -46,30 +46,31 @@
             <button type="submit">Add Event</button>
         </form>
         <br><br><br><br>
-        <div>
-            <label for="sortSelect">Sort By:</label>
-            <select id="sortSelect">
-                <option value="latest">Date (Descending)</option>
-                <option value="last">Date (Ascending)</option>
-                <option value="rating">Rating (Descending)</option>
-                <option value="ratingTwo">Rating (Ascending)</option>
-            </select>
-        </div>
-        <h2 class="glow">All Past Events:</h2>
-        <ul id="eventList"></ul>
-        <br><br><br>
-        <div>
-            <label for="sortSelectTwo">Sort By:</label>
-            <select id="sortSelectTwo">
-                <option value="latestTwo">Date (Descending)</option>
-                <option value="lastTwo">Date (Ascending)</option>
-                <option value="ratingSecond">Rating (Descending)</option>
-                <option value="ratingTwoSecond">Rating (Ascending)</option>
-            </select>
-        </div>
-        <h2 class="glow">Past Concerts:</h2>
-        <ul id="concertList"></ul>
-        <br><br><br>
+        <div class="container">
+            <div class="box">
+                <label for="sortSelect">Sort By:</label>
+                <select id="sortSelect">
+                    <option value="latest">Date (Descending)</option>
+                    <option value="last">Date (Ascending)</option>
+                    <option value="rating">Rating (Descending)</option>
+                    <option value="ratingTwo">Rating (Ascending)</option>
+                </select>
+                <h2 class="glow">All Past Events:</h2>
+                <ul id="eventList"></ul>
+            </div>
+            <div class="box">
+                <label for="sortSelectTwo">Sort By:</label>
+                <select id="sortSelectTwo">
+                    <option value="latestTwo">Date (Descending)</option>
+                    <option value="lastTwo">Date (Ascending)</option>
+                    <option value="ratingSecond">Rating (Descending)</option>
+                    <option value="ratingTwoSecond">Rating (Ascending)</option>
+                </select>
+                <h2 class="glow">Past Concerts:</h2>
+                <ul id="concertList"></ul>
+            </div>
+        </div> 
+        <br><br><br><br><br><br><br><br><br><br><br>
     </div>
     <script src="app.js"></script>
 </body>
