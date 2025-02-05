@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$dbname = "u545255404_en";
-$username = "u545255404_lmnitzsche";
-$password = "Loganlmn75!";
+$host = "35.239.115.242";
+$dbname = "project";
+$username = "Git";
+$password = "MZXfnC2lX6E3v";
 $mysqli = new mysqli(hostname: $host,
                      username: $username,
                      password: $password,
