@@ -63,7 +63,20 @@ footer {
     font-size: 12px;
 }
 .logo {
-    width: 500px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #00FFFF;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: black;
+    background: linear-gradient(45deg, #00FFFF, #00FFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 2px solid #00FFFF;
 }
 
 h1 {
