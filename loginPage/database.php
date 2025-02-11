@@ -1,8 +1,10 @@
 <?php
-$host = "35.239.115.242";
-$dbname = "project";
-$username = "Git";
-$password = "MZXfnC2lX6E3v";
+$env = parse_ini_file(__DIR__ . '/../.env');
+
+$host = $env['DB_HOST'];
+$dbname = $env['DB_NAME'];
+$username = $env['DB_USER'];
+$password = $env['DB_PASS'];
 $mysqli = new mysqli(hostname: $host,
                      username: $username,
                      password: $password,
