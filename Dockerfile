@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Use an official PHP image as the base image
 FROM php:8.1-apache
 
@@ -23,4 +24,29 @@ COPY . .
 EXPOSE 8080
 
 # Start Apache server
+=======
+# Use an official PHP runtime with Apache
+FROM php:8.1-apache
+
+# Install necessary PHP extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql && \
+    docker-php-ext-enable mysqli
+
+# Set working directory
+WORKDIR /var/www/html/
+
+# Copy application files to container
+COPY . /var/www/html/
+
+# Ensure proper permissions for Apache
+RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
+
+# Enable Apache Rewrite Module (if needed for .htaccess support)
+RUN a2enmod rewrite
+
+# Expose port 8080 for Google Cloud Run
+EXPOSE 8080
+
+# Start Apache in the foreground
+>>>>>>> Stashed changes
 CMD ["apache2-foreground"]

@@ -36,10 +36,13 @@ or
   
 6. **Enjoy:** Start reliving your favorite events by inserting and rating them, and don't forget to check out the Easter Egg!
 
+<<<<<<< Updated upstream
 ## License
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.
 
+=======
+>>>>>>> Stashed changes
 Enjoy reliving your favorite events with Event Nostalgia!
 
 <img width="1440" alt="Screenshot 2023-11-29 at 9 44 47 PM" src="https://github.com/lmnitzsche/Event-Nostalgia/assets/132515022/190ce351-9d5b-4f71-b3eb-7e3eb6c4d3c5">
