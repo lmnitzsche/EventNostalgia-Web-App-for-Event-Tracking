@@ -15,7 +15,7 @@ function init() {
 }
 
 function redirectToIndex() {
-    window.location.href = '../main/main.html';
+    window.location.href = '../index.html';
 }
 
 function update() {
